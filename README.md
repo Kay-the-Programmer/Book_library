@@ -44,8 +44,12 @@ The Book Library Project is a web application that allows users to manage a coll
     git clone https://github.com/yourusername/book-library.git
     cd book-library
     ```
-
-2. **Backend Setup:**
+2. **Database Setup**
+    - Create MySQL database
+      ```bash
+      CREATE DATABASE booklibrary;
+      ```
+3. **Backend Setup:**
 
     - Navigate to the backend directory:
       ```bash
@@ -60,8 +64,8 @@ The Book Library Project is a web application that allows users to manage a coll
       ```
     - Build and run the Spring Boot application:
       ```bash
-      mvn clean install
-      mvn spring-boot:run
+      ./gradlew build
+      ./gradlew bootRun
       ```
 
 3. **Frontend Setup:**
