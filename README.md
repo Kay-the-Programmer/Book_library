@@ -41,7 +41,7 @@ The Book Library Project is a web application that allows users to manage a coll
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/book-library.git
+    git clone https://github.com/Kay-the-Programmer/Book_library.git
     cd book-library
     ```
 2. **Database Setup**
