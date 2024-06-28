@@ -2,14 +2,12 @@
 
 ## Overview
 
-The Book Library Project is a web application that allows users to manage a collection of books. The frontend is built using Angular, while the backend is powered by Spring Boot. The application supports basic CRUD (Create, Read, Update, Delete) operations for books, user authentication, and a simple user interface to interact with the library.
+The Book Library Project is a web application that allows users to manage a collection of books. The frontend is built using Angular, while the backend is powered by Spring Boot. The application supports basic CRUD (Create, Read, Update, Delete) operations for books and a simple user interface to interact with the library.
 
 ## Features
 
-- User Authentication: Register, login, and manage user sessions.
 - Book Management: Add, edit, view, and delete books.
-- Search Functionality: Search for books by title or author.
-- Responsive Design: User-friendly interface accessible on various devices.
+
 
 ## Technologies Used
 
@@ -19,11 +17,11 @@ The Book Library Project is a web application that allows users to manage a coll
 - CSS3
 - TypeScript
 - Bootstrap
+- Material UI
 
 ### Backend
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - Java
-- Spring Security
 - Hibernate
 - MySQL
 
@@ -39,25 +37,22 @@ The Book Library Project is a web application that allows users to manage a coll
 
 ### Installation
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/Kay-the-Programmer/Book_library.git
-    cd book-library
-    ```
+1. **Download backend zip folder:**
+   
 2. **Database Setup**
     - Create MySQL database
       ```bash
-      CREATE DATABASE booklibrary;
+      CREATE DATABASE book_library;
       ```
 3. **Backend Setup:**
 
     - Navigate to the backend directory:
       ```bash
-      cd backend
+      cd src/main/resources
       ```
     - Update the `application.properties` file with your MySQL database configuration:
       ```properties
-      spring.datasource.url=jdbc:mysql://localhost:3306/booklibrary
+      spring.datasource.url=jdbc:mysql://localhost:3306/book_library
       spring.datasource.username=yourusername
       spring.datasource.password=yourpassword
       spring.jpa.hibernate.ddl-auto=update
@@ -70,10 +65,9 @@ The Book Library Project is a web application that allows users to manage a coll
 
 3. **Frontend Setup:**
 
-    - Navigate to the frontend directory:
-      ```bash
-      cd frontend
-      ```
+    - Download the fronted zip folder and extract:
+    - Open project folder in preferred IDE preferrably Webstorm or VS Code text editor.
+      
     - Install the dependencies:
       ```bash
       npm install
@@ -87,44 +81,11 @@ The Book Library Project is a web application that allows users to manage a coll
 
     Open your web browser and navigate to `http://localhost:4200`.
 
-## Project Structure
 
-```
-book-library/
-│
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── example/
-│   │   │   │           └── booklibrary/
-│   │   │   ├── resources/
-│   │   │       └── application.properties
-│   │   └── test/
-│   └── pom.xml
-│
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   ├── assets/
-│   │   ├── environments/
-│   │   └── index.html
-│   └── angular.json
-│
-└── README.md
-```
+## Challenges
+During this project the major problem that was encountered was the deprecation of some features and dependencies that I've been using.
+Therefore it took time to understand and put up with the new features and make good use of them.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Open a pull request.
 
 ## License
 
@@ -132,11 +93,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out:
 
 - Author: Kanyanta Pythias
 - Email: kanyantapythias072@gmail.com
 
 ---
 
-Thank you for using the Book Library Project! We hope it helps you manage your book collection effectively. Happy reading!
